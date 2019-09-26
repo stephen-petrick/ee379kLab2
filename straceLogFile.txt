@@ -1,0 +1,12 @@
+7366  open("/tmp/maliciousfile", O_WRONLY|O_CREAT|O_TRUNC, 0666) = 3
+7366  fcntl(1, F_DUPFD, 10)             = 10
+7366  close(1)                          = 0
+7366  fcntl(10, F_SETFD, FD_CLOEXEC)    = 0
+7366  dup2(3, 1)                        = 1
+7366  close(3)                          = 0
+7366  write(1, "malware\n", 8)          = 8
+7366  dup2(10, 1)                       = 1
+7366  close(10)                         = 0
+7366  exit_group(0)                     = ?
+7366  +++ exited with 0 +++
+

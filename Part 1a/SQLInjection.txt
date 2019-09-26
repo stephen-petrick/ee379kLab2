@@ -1,0 +1,4 @@
+Command used to do SQL Injection:
+'union all select user,password from users -- -
+
+The single quote at the beginning marked the end of the expected input, and caused the server to start executing the following command, the union all ..., andthe dashes were to comment out any following fields so no permissions would be checked against the injection.

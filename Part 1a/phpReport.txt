@@ -1,0 +1,5 @@
+The contents that the script outputs includes most but not all of what the terminal ouputs. However, I can't deduce a pattern as to what the script prints and what it doesn't. Initially, I thought that the script simply didn't include files, only directories. But then I also saw that it didn't include lib32, while it did include lib and lib64
+
+The server says 0 processes are running.
+
+My initial guess for both is that the server simply didn't have permission to see all of these things, although I believe it has root privileges from installation. My second guess, as this lab is focused on containers, is that the server operates in it's own particular realm, so to speak. It only prints these folders because those the only ones it thinks exists. Likewise for the processes.

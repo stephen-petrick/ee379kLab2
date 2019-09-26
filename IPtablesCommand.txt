@@ -1,0 +1,1 @@
+iptables -I INPUT \! --src 10.157.90.8 -m tcp -p tcp --dport 80 -j DROP

@@ -1,0 +1,5 @@
+https://pastebin.com/raw/ju6nQ7cQ
+
+in case link doesn't work:
+code was :
+alert("hacking")

@@ -1,0 +1,7 @@
+The simple.fe file applies roles the files based on what directory they're in.
+
+For example, all files in the directory "simple_example" have the simple_var_t role (or maybe type, since it has "_t") applied to it. Therefore, all the files in directory "simple_example" will have the privileges of the simple_var_t role/type.
+
+For the simple.te, I believe this file defines what the roles are.
+
+I think it gives the "simple_var_t" role read and write permissions under the "simple local policy" section. I'm not too sure what the top half in the "declarations" section is for, although I'm assuming it's some kind of initialization.
